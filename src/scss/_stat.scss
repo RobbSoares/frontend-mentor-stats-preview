@@ -11,7 +11,7 @@
   }
 
   &__block {
-    font-size: 0.75rem;
+    font-size: 12px;
     text-transform: uppercase;
     margin-top: 0.9375rem;
     color: $slightlyTransparentWhiteHeadings;
@@ -23,7 +23,7 @@
       color: $white;
       text-transform: none;
       font-family: $fontInter;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: 700;
     }
   }

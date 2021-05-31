@@ -23,10 +23,10 @@
   &__header {
     margin-bottom: 1.25rem;
     font-weight: 700;
-    font-size: 1.5625rem;
+    font-size: 25px;
 
     @include respond-to('medium') {
-      font-size: 1.875rem;
+      font-size: 2.125rem;
     }
 
     strong {
