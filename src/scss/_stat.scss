@@ -1,0 +1,30 @@
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.875rem;
+
+  @include respond-to('medium') {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  &__block {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-top: 0.9375rem;
+    color: $slightlyTransparentWhiteHeadings;
+    @include respond-to('medium') {
+      padding-right: 3.125rem;
+    }
+
+    &--number {
+      color: $white;
+      text-transform: none;
+      font-family: $fontInter;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "code-runner.executorMap": {
+        "typescript": "clear && npx ts-node --files --transpile-only",
+    },
+    "code-runner.runInTerminal": true,
+    "cSpell.ignoreWords": [
+        "cmyk",
+        "cor"
+    ],
+    "liveSassCompile.settings.formats": [
+
+      {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/dist/assets/css/"
+      }
+  ],
+}

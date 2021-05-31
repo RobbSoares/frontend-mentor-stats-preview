@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  font-size: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5.625rem;
+  margin-bottom: 5.625rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+}
+
+.text {
+  background-color: #1b1938;
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  width: 20.3125rem;
+  padding: 2.1875rem;
+  line-height: 1.5;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+@media (min-width: 992px) {
+  .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 60px 6.25rem 4.375rem 3.75rem;
+    height: 28.125rem;
+    width: 35.625rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
+
+.text__header {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 1.5625rem;
+}
+
+@media (min-width: 992px) {
+  .text__header {
+    font-size: 1.875rem;
+  }
+}
+
+.text__header strong {
+  color: #a55dd5;
+}
+
+.text__fulltext {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.image {
+  min-width: 20.3125rem;
+  min-height: 15rem;
+  background-image: url("../images/image-header-mobile.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+@media (min-width: 992px) {
+  .image {
+    min-width: 33.75rem;
+    min-height: 28.125rem;
+    order: 2;
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+}
+
+.image::after {
+  border-radius: inherit;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(77, 13, 119, 0.644);
+  z-index: 2;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.875rem;
+}
+
+@media (min-width: 992px) {
+  .stat {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+.stat__block {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 0.9375rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 992px) {
+  .stat__block {
+    padding-right: 3.125rem;
+  }
+}
+
+.stat__block--number {
+  color: white;
+  text-transform: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

@@ -1,0 +1,33 @@
+.image {
+  min-width: 20.3125rem;
+  min-height: 15rem;
+
+  @include respond-to('medium') {
+    min-width: 33.75rem;
+    min-height: 28.125rem;
+    order: 2;
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+
+  background-image: url('../images/image-header-mobile.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-radius: 0.625rem 0.625rem 0 0;
+
+  &::after {
+    border-radius: inherit;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $softVioletCover;
+    z-index: 2;
+  }
+}
+
+
+
